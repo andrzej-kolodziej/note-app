@@ -1,12 +1,6 @@
 var app = (function() {
     var notes = [];
 
-    window.onload = function() {
-        notes.forEach(function(value) {
-            renderNote(notes);
-        });
-    }
-
     function processSubmitOfAddNewNoteForm() {
         var form = document.getElementsByClassName('note-add__form')[0];
         var formClassName = form.className;
@@ -127,10 +121,19 @@ var app = (function() {
         note.noteContent = noteContent;
     }
 
+    function countRemainingCharacters(inputCounted, counterClass, maxValue) {
+        var charCount = inputCounted.value.length;
+        var counter = document.getElementsByClassName(counterClass)[0];
+        var remainingCharsNum = maxValue - charCount;
+        var counterText = counter.innerText.split(':')[0] + ": " + remainingCharsNum;
+        counter.innerText = counterText;
+    }
+
     return {
             processSubmitOfAddNewNoteForm: processSubmitOfAddNewNoteForm,
             editNote: editNote,
             saveEditedNoteChanges: saveEditedNoteChanges,
-            deleteNote: deleteNote
+            deleteNote: deleteNote,
+            countRemainingCharacters: countRemainingCharacters
         };
 })();

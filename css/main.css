@@ -31,7 +31,7 @@ form.submitted .note-add__title input:invalid, form.submitted .note-add__content
 }
 
 .note-title__error-message {
-    margin-top: 4px;
+    margin-top: 0px;
 }
 
 .note-add__error-message {
@@ -46,6 +46,10 @@ form.submitted .note-add__title input:invalid, form.submitted .note-add__content
 
 .note-add__form > * {
     margin-bottom: 10px;
+}
+
+.note-add__title input {
+    margin-bottom: 3px;
 }
 
 .note-add__error-message {
@@ -94,4 +98,10 @@ form.submitted .note-add__title input:invalid, form.submitted .note-add__content
 
 .note__title {
     text-align: center;
+}
+
+.remaining-characters-counter {
+    color: grey;
+    padding-left: 40px;
+    font-size: 11px;
 }

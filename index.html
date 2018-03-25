@@ -15,13 +15,15 @@
                 <span class="note-add__header"><h1>Nowa Notatka</h1></span>
                 <div class="note-add__title">
                     <label for="note-add__title-field">Tytuł:</label>
-                    <input type="text" id="note-add__title-field" required maxlength="150" size="50">
+                    <input type="text" id="note-add__title-field" required maxlength="150" size="50" onkeyup="app.countRemainingCharacters(this,'note-title__counter', 150);">
+                    <div class="remaining-characters-counter note-title__counter">Pozostało znaków: 150</div>
                     <div class="note-add__error-message note-title__error-message"></div>
                 </div>
 
                 <div class="note-add__content">
                     <label for="note-add__content-field">Treść:</label>
-                    <textarea rows="15" cols="51" id="note-add__content-field" required maxlength="1500"></textarea>
+                    <textarea rows="15" cols="51" id="note-add__content-field" required maxlength="1500" onkeyup="app.countRemainingCharacters(this,'note-content__counter', 1500);"></textarea>
+                    <div class="remaining-characters-counter note-content__counter">Pozostało znaków: 1500</div>
                     <div class="note-add__error-message note-content__error-message"></div>
                 </div>
 
