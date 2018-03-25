@@ -1,0 +1,97 @@
+.content {
+    padding: 5px;
+    font-family: Calibri, Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.note-add {
+    display: table;
+    border: 1px solid #1ca0f0;
+    padding: 10px;
+}
+
+.note-add__form {
+    margin-right: 45px;
+}
+
+.note-add__title {
+    margin-bottom: 5px;
+}
+
+.note-add__content label {
+    float: left;
+    margin-right: 5px;
+}
+
+form.submitted .note-add__title input:invalid, form.submitted .note-add__content textarea:invalid {
+    border: 1px solid red;
+}
+
+.note-add__header {
+    text-align: center;
+}
+
+.note-title__error-message {
+    margin-top: 4px;
+}
+
+.note-add__error-message {
+    background-color: red;
+    color: white;
+    font-style: oblique;
+}
+
+.note-add__text-color label {
+    margin-right: 5px;
+}
+
+.note-add__form > * {
+    margin-bottom: 10px;
+}
+
+.note-add__error-message {
+    width: 381px;
+    margin-left: 41px;
+}
+
+.note-container {
+    display: inline-block;
+    margin: 10px;
+    vertical-align: top;
+}
+
+.note {
+    min-width: 170px;
+    min-height: 200px;
+    max-width: 300px;
+    border-radius: 5%;
+    border: 1px solid black;
+    word-wrap: break-word;
+}
+
+.note > p {
+    margin: 2px;
+    padding: 2px;
+}
+
+.note > hr {
+    margin: 0;
+    padding: 0;
+}
+
+.note__buttons {
+    padding: 2px;
+    float: right;
+    margin-right: 10px;
+}
+
+.note__buttons button {
+    font-size: 10px;
+}
+
+.notes {
+    margin-top: 10px;
+}
+
+.note__title {
+    text-align: center;
+}
